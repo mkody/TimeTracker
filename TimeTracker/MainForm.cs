@@ -153,7 +153,10 @@ namespace TimeTracker
 
         private void MainForm_Shown(object sender, EventArgs e)
         {
-            dtGrid.FirstDisplayedScrollingRowIndex = dtGrid.RowCount - 1;
+            if (dtGrid.RowCount > 0)
+            {
+                dtGrid.FirstDisplayedScrollingRowIndex = dtGrid.RowCount - 1;
+            }
         }
 
         private void MainForm_Resize(object sender, EventArgs e)
