@@ -1,4 +1,6 @@
 # TimeTracker
+[![Build Status](https://travis-ci.org/mkody/TimeTracker.svg?branch=master)](https://travis-ci.org/mkody/TimeTracker)
+
 > Note when something happens, for tracking.
 
 Just open the app, write what's happening and press add (or <kbd>ENTER</kbd>).  
