@@ -4,7 +4,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Windows.Input;
 using CsvHelper;
-using GlobalHotKey;
+// using GlobalHotKey;
 
 // sorry, no comments in this code (except this one)
 namespace TimeTracker
@@ -12,7 +12,7 @@ namespace TimeTracker
     public partial class MainForm : Form
     {
         private List<TimeElement> ourElements = new List<TimeElement>();
-        private HotKeyManager hotKeyManager;
+        // private HotKeyManager hotKeyManager;
 
         public MainForm()
         {
@@ -38,9 +38,11 @@ namespace TimeTracker
             InitializeComponent();
             CreatingGrid();
 
+            /*
             this.hotKeyManager = new HotKeyManager();
             var hotKey = this.hotKeyManager.Register(Key.T, System.Windows.Input.ModifierKeys.Shift | System.Windows.Input.ModifierKeys.Control);
             this.hotKeyManager.KeyPressed += HotKeyManagerPressed;
+            */
         }
 
         public void CreatingGrid()
@@ -175,6 +177,7 @@ namespace TimeTracker
             this.WindowState = FormWindowState.Normal;
         }
 
+        /*
         private void HotKeyManagerPressed(object sender, KeyPressedEventArgs e)
         {
             if (e.HotKey.Key == Key.T)
@@ -185,5 +188,6 @@ namespace TimeTracker
                 this.Activate();
             }
         }
+        */
     }
 }
